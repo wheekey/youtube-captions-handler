@@ -85,3 +85,7 @@ class TextHelper:
             return str1_len
         else:
             return str2_len
+
+    @staticmethod
+    def is_letter(char: str) -> bool:
+        return re.match(r'[а-яА-Яa-zA-Z]', char) is not None
